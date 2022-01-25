@@ -1,0 +1,11 @@
+h1{
+    color: aqua;
+    align-items: center;
+}
+#input1{
+  border-radius: 2em;
+}
+button{
+    color: blue;
+    background-color: aliceblue;
+}

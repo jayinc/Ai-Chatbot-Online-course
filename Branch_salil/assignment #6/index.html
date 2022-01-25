@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiplier</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>!! Multiplication table !!</h2>
+      <form id="myForm">
+        <div class="i">
+          <input type="text" placeholder="Enter a number" id="input" />
+        </div>
+
+        <br />
+
+        <div class="button">
+          <button type="button" onclick="multiply()">Calculate</button>
+        </div>
+
+        <h3 id="result"></h3>
+      </form>
+    </div>
+
+    <script>
+      function multiply() {
+        document.getElementById("result").innerText = "";
+
+        //    debugger;
+        var input = document.getElementById("input").value;
+        for (var i = 0; i < 10; i++) {
+          var oneBaseIndex = i + 1;
+
+          document.getElementById("result").innerText +=
+            `${input} x ${oneBaseIndex} = ${input * oneBaseIndex}` + "\n";
+
+          // console.log(`${input} x ${oneBaseIndex} = ${input * oneBaseIndex}`);
+        }
+      }
+    </script>
+  </body>
+</html>
